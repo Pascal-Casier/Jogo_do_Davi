@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://c40rqj4323k7y"]
+
+[ext_resource type="PackedScene" uid="uid://swc3d6istsic" path="res://Jogo_do_Davi/game.tscn" id="1_wjymu"]
+[ext_resource type="Texture2D" uid="uid://cpti5eitv0h6m" path="res://Jogo_do_Davi/assets/Material/Paper.png" id="2_3ot7a"]
+[ext_resource type="Texture2D" uid="uid://b67kqlnkn0xyr" path="res://Jogo_do_Davi/assets/Material/Rope.png" id="3_kf2nd"]
+[ext_resource type="Texture2D" uid="uid://bqsd26g8y7qc5" path="res://Jogo_do_Davi/assets/Material/Wood Log.png" id="4_5xh4g"]
+[ext_resource type="Texture2D" uid="uid://0dv0r4afyibu" path="res://Jogo_do_Davi/assets/Material/Wool.png" id="5_i46pj"]
+
+[node name="Game2" instance=ExtResource("1_wjymu")]
+new_word = "la laine"
+
+[node name="Button" parent="MarginContainer/ColorRect/HBoxContainer/MarginContainer" index="0"]
+text = "la laine"
+
+[node name="image" parent="MarginContainer/ColorRect/HBoxContainer/VBoxContainer" index="0"]
+text = "du papier"
+my_icon = ExtResource("2_3ot7a")
+
+[node name="image2" parent="MarginContainer/ColorRect/HBoxContainer/VBoxContainer" index="1"]
+text = "une corde"
+my_icon = ExtResource("3_kf2nd")
+
+[node name="image3" parent="MarginContainer/ColorRect/HBoxContainer/VBoxContainer" index="2"]
+text = "du bois"
+my_icon = ExtResource("4_5xh4g")
+
+[node name="image4" parent="MarginContainer/ColorRect/HBoxContainer/VBoxContainer" index="3"]
+text = "la laine"
+my_icon = ExtResource("5_i46pj")
+
+[node name="BtnNext" parent="MarginContainer/ColorRect" index="2"]
+visible = true
+text = "fin"
