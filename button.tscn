@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn5x2c5m47ok0"]
+
+[ext_resource type="Script" path="res://Jogo_do_Davi/button.gd" id="1_ey830"]
+[ext_resource type="AudioStream" uid="uid://d00triat0fkuj" path="res://Jogo_do_Davi/sounds/cannon_hit_cannon.ogg" id="2_el435"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(200, 40)
+offset_right = 8.0
+offset_bottom = 8.0
+text = "une pomme"
+script = ExtResource("1_ey830")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_el435")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

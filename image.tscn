@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://3takntf8b8ps"]
+
+[ext_resource type="Script" path="res://Jogo_do_Davi/image.gd" id="1_07r7d"]
+[ext_resource type="Texture2D" uid="uid://brjkfojmyyej4" path="res://Jogo_do_Davi/assets/Food/Apple.png" id="1_rse07"]
+
+[node name="image" type="Button"]
+custom_minimum_size = Vector2(100, 100)
+text = "chaise"
+script = ExtResource("1_07r7d")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_rse07")
