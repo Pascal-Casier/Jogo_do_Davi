@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://swc3d6istsic"]
+[gd_scene load_steps=2 format=3 uid="uid://swc3d6istsic"]
+
+[ext_resource type="Texture2D" uid="uid://40fhn53arp1x" path="res://icon.svg" id="1_81hnr"]
 
 [node name="Game" type="ColorRect"]
 anchors_preset = 15
@@ -25,3 +27,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(0.0392157, 0.0313726, 0.286275, 1)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(541, 243)
+texture = ExtResource("1_81hnr")
