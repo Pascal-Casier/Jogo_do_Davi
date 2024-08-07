@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c40rqj4323k7y"]
 
-[ext_resource type="PackedScene" uid="uid://swc3d6istsic" path="res://Jogo_do_Davi/game.tscn" id="1_wjymu"]
+[ext_resource type="PackedScene" uid="uid://swc3d6istsic" path="res://Jogo_do_Davi/game_1.tscn" id="1_wjymu"]
 [ext_resource type="Texture2D" uid="uid://cpti5eitv0h6m" path="res://Jogo_do_Davi/assets/Material/Paper.png" id="2_3ot7a"]
 [ext_resource type="Texture2D" uid="uid://b67kqlnkn0xyr" path="res://Jogo_do_Davi/assets/Material/Rope.png" id="3_kf2nd"]
 [ext_resource type="Texture2D" uid="uid://bqsd26g8y7qc5" path="res://Jogo_do_Davi/assets/Material/Wood Log.png" id="4_5xh4g"]
@@ -28,6 +28,32 @@ my_icon = ExtResource("4_5xh4g")
 text = "la laine"
 my_icon = ExtResource("5_i46pj")
 
+[node name="Score2" parent="MarginContainer/ColorRect" index="1"]
+offset_left = 143.0
+offset_top = -103.0
+offset_right = 221.0
+offset_bottom = -33.0
+
 [node name="BtnNext" parent="MarginContainer/ColorRect" index="2"]
-visible = true
 text = "fin"
+
+[node name="BtnPrevieous2" type="Button" parent="MarginContainer/ColorRect" index="3"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1073.0
+offset_top = -84.0
+offset_right = -1007.0
+offset_bottom = -34.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "<="
+
+[connection signal="pressed" from="MarginContainer/ColorRect/BtnPrevieous2" to="." method="_on_btn_previeous_pressed"]
+[connection signal="pressed" from="MarginContainer/ColorRect/BtnPrevieous2" to="." method="_on_btn_next_pressed"]

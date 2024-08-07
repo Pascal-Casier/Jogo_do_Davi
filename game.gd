@@ -39,6 +39,8 @@ func on_image_pressed(b):
 		audio_stream_player.stream = CORRECT_SOUND_EFFECT
 		audio_stream_player.play()
 		%BtnNext.show()
+		if Global.chapter_nbr > 1:
+			%BtnPrevieous.show()
 	else:
 		print ("dommage")
 		wrong_answer_score += 1
@@ -53,3 +55,8 @@ func _on_btn_next_pressed() -> void:
 		get_tree().change_scene_to_file("res://Jogo_do_Davi/game_" + str(Global.chapter_nbr) + ".tscn")
 	else: 
 		get_tree().quit()
+
+func _on_btn_previeous_pressed() -> void:
+	Global.chapter_nbr -= 1
+	get_tree().change_scene_to_file("res://Jogo_do_Davi/game_" + str(Global.chapter_nbr) + ".tscn")
+	print_debug( "previeus")

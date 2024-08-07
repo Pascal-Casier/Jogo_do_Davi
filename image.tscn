@@ -5,7 +5,7 @@
 
 [node name="image" type="Button"]
 custom_minimum_size = Vector2(100, 100)
-theme_override_font_sizes/font_size = 0
+theme_override_font_sizes/font_size = 2
 text = "chaise"
 script = ExtResource("1_07r7d")
 
